@@ -111,7 +111,7 @@ h3 {
 }
 
 h1 { font-size:  var(--fs-h1) }
-h2 { font-size:  var(--fs-h2); background: linear-gradient(to right, #F7E405 50%,  #5511A7 100%);
+h2 { font-size:  var(--fs-h2); background: linear-gradient(to right, #F7E405 20%,  #5511A7 100%);
 	  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 h3 { font-size:  var(--fs-h3) }
@@ -193,8 +193,11 @@ h3 { font-size:  var(--fs-h3) }
 	text-decoration: none;
 }
 
-.nav--link:hover {
-	color: var(--clr-accent);
+.nav__link:hover {
+	color: var(--clr-accent); 
+	background: linear-gradient(to right, #F7E405 0%,  #5511A7 50%);
+	  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav-toggle {
@@ -372,7 +375,7 @@ border: 0px solid #000000;
 }
 
 .about-me__img {
-	box-shadow: var(--bs);
+	box-shadow: var(--bs),
 	border-radius: 10px 10px 10px 10px;
 -moz-border-radius: 10px 10px 10px 10px;
 -webkit-border-radius: 10px 10px 10px 10px;
@@ -410,6 +413,7 @@ border: 0px solid #000000;
 		grid-area: img;
 		position: relative;
 		z-index: 2;
+		min-width: 400px;
 	}
 }
 
@@ -480,9 +484,9 @@ text-decoration: none;
 }
 
 /* .footer__link:hover {
-	text-decoration: underline; */
+	text-decoration: underline; 
 	
-}
+} */
 
 .social-list {
 	list-style: none;
