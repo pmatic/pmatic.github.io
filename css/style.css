@@ -317,7 +317,7 @@ border: 0px solid #000000;
 		grid-row: 2;
 		text-align: left;
 		position: relative;
-		left: -14em;
+		left: -14.5em;
 		bottom: 20em;
 		width: calc(100% + 1.5em);
 	}
