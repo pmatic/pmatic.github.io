@@ -13,7 +13,12 @@
 
 	--fw-reg: 300;
 	--fw-bold: 700;
-
+/* My colors: 
+F7E405 yellow
+5511A7 purple
+#46453e dark grey
+#fafaf9 light gray
+*/;
 	--clr-light: #fafaf9 ;
 	--clr-dark: #46453e ;
 	--clr-accent: #46453e ;
@@ -473,6 +478,7 @@ text-decoration: none;
 .footer__link {
 
 	font-weight: bold;
+	
 }
 
 .footer__link:hover,
