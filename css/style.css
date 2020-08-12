@@ -119,7 +119,7 @@ h3 { font-size:  var(--fs-h3) }
 
 .section__title {
 	 margin-bottom: 0.5em;
-	 padding-bottom: 0.5em;
+	 /* padding-bottom: 0.5em; */
 }
 
 .section__title--intro {
@@ -422,7 +422,7 @@ border: 0px solid #000000;
 .my-work {
 	border-color: var(--clr-dark);
 	color: var(--clr-light);
-	text-align: center;
+	text-align: left;
 
 }
 
@@ -443,7 +443,7 @@ border: 0px solid #000000;
 
 }
 
-.portfolio__iten:focus {
+.portfolio__item:focus {
 	position: relative;
 	z-index: 2:;
 }
@@ -457,7 +457,7 @@ border: 0px solid #000000;
 /* footer */
 
 .footer {
-	background: #111;
+	background: #fafaf9 ;
 	color: var(--clr-accent);
 	text-align: center;
 	padding: 2.5em 0;
