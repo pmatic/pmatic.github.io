@@ -40,7 +40,7 @@ F7E405 yellow
 		:root {
 			--fs-h1: 8.5rem;
 			--fs-h2: 5rem;
-			--fs-h3: 1.5rem;
+			--fs-h3: 2rem;
 			--fs-body: 1.25rem;			;
 	}
 }
@@ -268,6 +268,7 @@ h3 { font-size:  var(--fs-h3) }
 
 .intro {
 	position: relative;
+	transform: translate(5%, 5%);
 }
 
 .intro__img {
@@ -281,16 +282,40 @@ border: 0px solid #000000;
 .section__subtitle--intro {
 	display: inline-block;
 }
+.jobnames:before {
+	content: '';
+	animation: animate infinite 8s;
+}
+@keyframes animate{
+	0% {
+		content: 'an activist';
+	}
+	20%{
+		content: 'an organizer';
+	}
+	40%{
+		content: 'a mediator';
+	}
+	60%{
+		content: 'an educator';
+	}
+	80%{
+		content: 'a researcher';
+	}
+	100%{
+		content: 'an activist';
+	}
+}
 
 @media (min-width: 600px) {
-	.intro {
+	/*.intro {
 		display: grid;
 		width: min-content;
 		margin: 0 auto;
 		grid-column-gap: 1em;
 		grid-template-areas: 
 			"subtitle title"
-			"title title";
+			"subtitle title";
 		grid-template-columns: min-content max-content;
 	}
 
@@ -305,9 +330,12 @@ border: 0px solid #000000;
 
 	.section__title--intro {
 		grid-area: title;
-		grid-column: 1 / 5;
-		grid-row: 1;
+		grid-column: 2 / 5;
+		grid-row: 3;
+		position: relative;
 		padding: 0.72em;
+		bottom: 10.5em;
+		left: -5em;
 
 	}
 
@@ -317,11 +345,11 @@ border: 0px solid #000000;
 		grid-row: 2;
 		text-align: left;
 		position: relative;
-		left: -14.5em;
-		bottom: 20em;
+		left: -10em;
+		bottom: 15.5em;
 		width: calc(100% + 1.5em);
 	}
-}
+} */
 
 
 
