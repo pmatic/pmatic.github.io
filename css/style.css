@@ -21,11 +21,12 @@ F7E405 yellow
 */;
 	--clr-light: #fafaf9 ;
 	--clr-dark: #46453e ;
-	--clr-accent: #46453e ;
+	--clr-accent: deeppink ;
 
 	--fs-h1: 3.75rem;
 	--fs-h2: 2.75rem;
 	--fs-h3: 1.5rem;
+	--fs-h4: 1.5rem;
 	--fs-body: 1rem;
 
 	--bs: 0 0.063em 0.125em rgba(0,0,0,.07), 
@@ -40,7 +41,8 @@ F7E405 yellow
 		:root {
 			--fs-h1: 8.5rem;
 			--fs-h2: 5rem;
-			--fs-h3: 2rem;
+			--fs-h3: 7.75rem;
+			--fs-h4: 2.5rem;
 			--fs-body: 1.25rem;			;
 	}
 }
@@ -109,9 +111,11 @@ border: 0px solid #000000;
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
 	line-height: 1;
 	margin: 0;
+	padding: 10px;
 	
 }
 
@@ -120,6 +124,9 @@ h2 { font-size:  var(--fs-h2); background: linear-gradient(to right, #F7E405 20%
 	  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 h3 { font-size:  var(--fs-h3) }
+h4 { font-size:  var(--fs-h4); background: linear-gradient(to right, #F7E405 20%,  #5511A7 100%);
+	  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 
 .section__title {
@@ -143,7 +150,7 @@ h3 { font-size:  var(--fs-h3) }
 .section__subtitle--intro,
 .section__subtitle--about {
 /*	background: var(--clr-accent); */
-	padding: .25em 0.5em;
+	padding: 0em 0.5em;
 	font-family: var(--ff-secondary);
 	font-weight: 300;
 }
@@ -215,10 +222,12 @@ h3 { font-size:  var(--fs-h3) }
 	right: 1em;
 	top: 1em;
 	z-index: 1000;
+	color: var(--clr-light);
 }
 
 .nav-open .nav {
 	transform: translateX(0);
+	color: var(--clr-light);
 
 }
 
@@ -235,7 +244,8 @@ h3 { font-size:  var(--fs-h3) }
 }
 
 .nav-open .hamburger::after {
-	opacity: 0;
+	opacity: 100;
+	color: var(--clr-light);
 }
 
 .hamburger {
@@ -244,9 +254,17 @@ h3 { font-size:  var(--fs-h3) }
 }
 
 .hamburger,
-.hamburger::before,
+.hamburger::before {
+	background: var(--clr-dark);
+	color: var(--clr-light);
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+
 .hamburger::after {
-	background: var(--clr-accent);
+	color: var(--clr-dark);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -259,6 +277,7 @@ h3 { font-size:  var(--fs-h3) }
 	position: absolute;
 	left: 0;
 	right: 0;
+	color: var(--clr-light);
 }
 
 .hamburger::before { top: 6px; }
@@ -268,7 +287,7 @@ h3 { font-size:  var(--fs-h3) }
 
 .intro {
 	position: relative;
-	transform: translate(5%, 5%);
+	/* transform: translate(5%, 5%); */
 }
 
 .intro__img {
@@ -281,6 +300,8 @@ border: 0px solid #000000;
 
 .section__subtitle--intro {
 	display: inline-block;
+	position: relative;
+	left: -0.6em;
 }
 .jobnames:before {
 	content: '';
