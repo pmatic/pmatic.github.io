@@ -1,0 +1,653 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Petra Matić CV</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1034c2f6-c2fc-4f98-af8f-e345c0a7a7f5" class="page serif"><header><h1 class="page-title">Petra Matić CV</h1></header><div class="page-body"><p id="9e422a13-1560-4fb5-9b94-fcc8f8adfceb" class="">
+</p><h3 id="586a6230-2c6a-4155-b7e9-7e582b2ef4d0" class="">EDUCATION</h3><p id="6472208f-e6a9-495d-bf77-df9509ec4f17" class=""><strong>2020 - University of Zagreb (HR)</strong></p><p id="0da2511f-9558-43e4-b47c-f746c4835a6d" class="">MA in Information Sciences - Museology and Heritage Management</p><p id="eefdefa6-ed73-49ab-98d3-fc71876abc67" class="">
+</p><p id="0399cc25-0783-44f3-9c93-23f50fb3755f" class=""><strong>2013 - University of Zagreb</strong></p><p id="925c1bc3-400f-4d87-b0e1-db6fa039dead" class="">BA in Phonetics and Swedish Language</p><p id="27e1c756-db0b-4c0b-9405-c1d1ce90f223" class="">
+</p><p id="4d7f4778-bd7e-42ec-94dd-8e2461cf6257" class="">
+</p><h3 id="a891b6f0-fab6-4d05-9ac4-575b30616dbf" class="">SELECTED AWARDS | HONORS | GRANTS</h3><p id="aec6d783-3ed5-45e9-9dd2-dfd3cb4bfafe" class="">2020</p><p id="a0bdedff-0ce5-4ed1-83ff-7d06d7a33422" class=""><em>Movements Building Movements</em></p><p id="db1acae5-a613-4e7f-945c-63dc18b81a5a" class="">Recipient of the grant ‘Culture of Solidarity’ for the development of an intersectional European network of support for artistic &amp; cultural initiatives working in the field of social change, diversity and inclusion. </p><p id="9d43ea9a-5c90-4e38-9b75-e7e7a13880f0" class="">Co-developed with Nina Martin, founder of QTBIPOC cultural center Oyoun, Berlin (DE), Roberto Perez Gayo, social designer and pedagogue at the HARM Reduction Network (NL), Han Pham, co-founder of Empowerhack, a design &amp; technology network supporting women in humanitarian contexts (USA), and social design studio Marginal Studio, Palermo (IT).</p><p id="4059a308-1923-45f7-8689-a84e68d1f6a3" class="">With the support of European Cultural Foundation</p><p id="83a3aa05-d912-4b1d-a891-adab96418155" class="">
+</p><p id="eb256d12-f700-4951-a01d-9464ccea864e" class=""><em>Spaces for Solidarity | Culture Lab Europe</em></p><p id="64fc1fb9-4e09-4f73-a8df-a9c517ce31e5" class="">Recipient of the residency ‘European Cultural Lab&#x27;, multidisciplinary event for cultural and artistic activists developing initiatives contributing to a European space for public debate, fostering solidarity across Europe.</p><p id="6348c711-7978-4248-9887-007b542298c6" class="">With the support of European Cultural Foundation</p><p id="1a585c98-34fc-4a99-b9c7-0486725dcc07" class="">
+</p><p id="f18d5c0e-5ecd-45a9-9590-7a557f6f4457" class="">2019</p><p id="fc28e69c-b7d0-448f-8cf8-d97f193b1ed9" class=""><em>IMPACT19-Weaving Traces | Pact Zollverein</em></p><p id="1f3ce973-0f57-4520-8204-9ae156d70198" class="">Recipient of the residency &#x27;Weaving Traces&#x27;, transdisciplinary symposium for practitioners and theorists exposing interventions and discrimination in the political sphere, urban and island structures, ecological contexts, and the body.</p><p id="ef8f0ffa-fa93-44d6-bf86-46bd5d86452a" class="">With the support of the Federal Government Commissioner for Culture and the Media</p><p id="0fd34ec7-1f50-4688-9002-878ae71dd337" class="">
+</p><p id="a448fddb-6543-43e7-88b3-dffd70268139" class="">
+</p><h3 id="823e6e30-006d-4ad3-848f-8f752aad96d6" class="">SELECTED EXHIBITIONS | CREATIVE WORK</h3><p id="f6a6a575-e183-4946-88d6-0543f17439bd" class="">2020</p><p id="2f203b1f-cf82-422f-bf69-d22af51ba138" class=""><em>Tahsan Shahriar</em></p><p id="f15b7bd9-68ab-49e7-8bf1-aacb34f3bdb7" class="">Solo exhibition of the Bangladeshi visual artist Tahsan Shahriar, exploring landscapes of Noakhali and their relationship to his new home in Zagreb.</p><p id="2eed3045-850b-4d78-adf6-04cf7c4f36c4" class="">Co-developed with Željka Sušić.</p><p id="14fc6c7d-ac01-4249-8fc5-5765154ce437" class="">Typhlological Museum, Zagreb (HR)</p><p id="233c61ff-562a-4556-a528-02e725bff49a" class="">
+</p><p id="051b4f7f-0d30-48e2-aef6-744eba881584" class="">2019</p><p id="134823ab-7882-436d-9cde-748093d7c99f" class=""><em>Delo Archive Lab</em></p><p id="38a68a25-fab2-4c7a-be3b-5ffb532a3a11" class="">Delo Lab is an open collaborative research platform rebuilding 
+collective memory to create new narratives, rediscover common history 
+and reconnect the community. In the time of an information crisis, 
+dominated by short attention spans and fake news, both communities and 
+archives remain sources of knowledge we can still rely on. In Delo Lab, 
+the newspaper archive is opened to the community and uses audience 
+feedback to improve its collections with previously unpublished stories 
+and information. Audience members have the opportunity to tell their 
+personal histories and exchange their perspectives, which are then 
+placed in the greater narrative of the community.</p><p id="a6519506-034f-4384-bfa3-ab73f57412fb" class="">The Delo Lab platform offers space to diverse voices, acting as a 
+platform for dialogue between various groups and individuals, thus 
+generating new, crowdsourced knowledge.</p><p id="d21d9d43-ab92-450a-a0f1-880e5c3308aa" class="">Co-developed with Zuzanna Zgierska (NL), Mateja Mlinarič (SI), Maxime Benvenuto (NL), José Tomás Pérez Valle (CL), and Jurka Mihelin (SI)</p><p id="45435d56-1399-4462-90bc-83d4ae9dcc60" class="">Special thanks to Ali Žerdin and Bureau d&#x27;Études</p><p id="368c148f-dacd-413e-af9d-48cad2f8e609" class="">Ljubljana Design Biennale for the exhibition BIO 26|Common Knowledge, commissioned by Museum of Arts and Design Ljubljana, in collaboration with the Slovenian national newspaper Delo (SI)</p><p id="51f1c9b8-a322-4cfd-a992-706ac62f7fd4" class="">
+</p><p id="01a95da1-54de-4c7c-9658-056991b2695d" class=""><em>Museums - Places of Dialogue</em></p><p id="8743efac-973f-4b35-a5e9-ee10cf7d12b8" class="">Design and development of inclusive museum program targeting marginalized youth.</p><p id="c9bf8bfb-bb3b-41d9-a44c-45b5bbd477fa" class="">Co-developed with Željka Jelavić (Ethnographic Museum Zagreb), Željka Sušić (Typhlological Museum Zagreb), and Kosjenka Laszlo Klemar (Technical Museum Nikola Tesla)</p><p id="9fb3acc2-2aca-49ea-87ca-74895ccce219" class="">Technical Museum Nikola Tesla (HR), produced with the support of the City of Zagreb (HR)</p><p id="5795c16f-08f8-4062-ad0e-a5968f26c1ba" class="">
+</p><p id="635bb416-8ddf-46cd-9384-d32756552759" class="">
+</p><h3 id="456f3ac3-992c-4c75-9358-12aa8b79baea" class="">SELECTED LECTURES | PANELS | ADVISORY</h3><p id="a145729f-1aef-4ff1-9cce-5ffcbfcacb61" class="">2020</p><p id="ddf4e615-c02f-47e6-ad0f-cd74cd7a515c" class=""><em>The Heritage of Colonialism</em></p><p id="00bfbd8a-c4de-41e4-8f2c-4c2a85f2ee7c" class="">Panelist, alongside Professor Tomislav Pletenac (University of Zagreb, anthropologist and ethnologist), moderated by Professor Tvrtko Jakovina (University of Zagreb, historian). 24 January.</p><p id="c2c56ba6-a55f-4b69-828b-9147f20ff986" class="">Dokukino KIC, Zagreb (HR)</p><p id="46353b0f-a5fd-4b90-841f-e0f2c3c120f8" class="">
+</p><p id="a83bbb2e-947a-49da-a12b-507ebaf5fd92" class="">2019</p><p id="e8da40d0-4bb1-44bc-b3c7-b86d50faad86" class=""><em>Borders and Violence</em></p><p id="84699d13-2c47-4c6d-bf0e-d548e23c2a1a" class="">Guest lecturer for the programme &quot;Anthropology of Violence and Conflict&quot; for the graduate students of the Ethnology and Cultural Anthropology department.</p><p id="601b125c-0d71-4867-b0c2-3ed742452b05" class="">Faculty of Humanities and Social Sciences, Zagreb (HR)</p><p id="f6e70582-d4fc-45e8-ba03-99c4fa70ff69" class="">
+</p><p id="b93e8c25-4af9-4ec6-8c66-f9dcd622288e" class=""><em>Challenges of Contemporary Migrations and Integration</em></p><p id="b3291c43-ea27-42ee-8ad1-ed922bf7f125" class="">Presenter and panelist, alongside Sandra Malenica (Deputy Mayor of the City of Varaždin), (President of the Varaždin City Council), and Amer Alsawaf (Paralegal).</p><p id="55c77ee6-8b47-4fd9-9e07-d77a068a5886" class="">Centre for Traditional Culture, Varaždin (HR)</p><p id="95d22d10-0cd0-44c6-b8d6-5af9de429cfa" class="">
+</p><h3 id="182d556f-dc92-498d-bcf9-f5b4369a917d" class="">SELECTED WORK</h3><p id="64122ea7-88fb-42a3-a36c-b75449d65a90" class=""><strong>2018 - 2020 | Večernji List, Zagreb (HR)</strong></p><p id="f511a245-95b7-4bd6-afd7-d8eabca176b4" class="">Archivist, Media Museum project</p><p id="5909b66e-704e-45df-a9c3-0b8864a49a44" class=""><strong>2016 - 2018 | Association of Former Students of the School of Applied Art and Design, Zagreb (HR)</strong></p><p id="f1ca6924-c5b7-443d-9581-71952b08dbfc" class="">Assistant Curator</p><p id="64b93495-1450-4ae0-9033-f903d9f58387" class=""><strong>2016 | Verein für eine Schönere Willkommenskultur, La Liniere Refugee Camp (FR)</strong></p><p id="272d915c-4bcd-4fad-bc3b-359f81063118" class="">Emergency Response Field Manager</p><p id="0129a020-0555-4253-a429-65365ef5a02b" class=""><strong>2015 | Jaja Studios, Dublin (IE)</strong></p><p id="fefd637a-c44e-4890-a171-dc2e08816728" class="">Curatorial Intern</p></div></article></body></html>
