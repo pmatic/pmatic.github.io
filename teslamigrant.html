@@ -6,8 +6,12 @@
 html {
 	-webkit-print-color-adjust: exact;
 }
-* {
-	box-sizing: border-box;
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
 	-webkit-print-color-adjust: exact;
 }
 
@@ -15,6 +19,8 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+	font-size: 62.5%;
 }
 @media only screen {
 	body {
@@ -627,6 +633,11 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 /* gallery css! */
+.container {
+	width: 60%;
+	margin: 2rem auto;
+}
+
 .gallery {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
@@ -638,27 +649,22 @@ blockquote {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	display: block;
 }
 
 .gallery__item--1 {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row-start: 1;
-	grid-row-end: 3;
+	grid-column: 1 / span 2;
+	grid-row: 1 / span 2;
 }
 
 .gallery__item--2 {
-	grid-column-start: 3;
-	grid-column-end: 5;
-	grid-row-start: 1;
-	grid-row-end: 3;
+	grid-column: 3 / span 2;
+	grid-row: 1 / span 2;
 }
 
 .gallery__item--3 {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row-start: 3;
-	grid-row-end: 5;
+	grid-column: 1 / span 2;
+	grid-row: 2 / span 2;
 }
 	
 </style></head>
@@ -669,7 +675,7 @@ The public forum was organized on the <strong>International Museum Day 2018</str
 While organizing the panel, the project team encountered difficulties in reaching potential speakers from the scientific and technical sector, who often declined the invitation to participate with the argument that they did not know anything about migration. </p><p id="c63419ec-fc87-4b20-bce6-9c6c2611853a" class="">Some academic initiatives showed a lack of interest despite their experience of working with people with migrant backgrounds, and some humanitarian organizations did not answer the invitations. The project team interpreted this as a possible consequence of tensions between humanitarian and government-related organizations. </p><p id="dd6e8f0a-c196-4535-bcdd-0badef6df4b1" class="">The panel was hosted by the journalist <strong>Zoran Pehar</strong>, and the speakers included <strong>Eugen Vuković</strong> from the environmental NGO Zelena Akcija [Green Action], <strong>Marijana Međugorac</strong> and <strong>Maja Nikolandić</strong> from the asylum seeker support initiative Are You Syrious, <strong>Sara Kekuš</strong> from a civil society NGO Centar za mirovne studije [Centre for Peace Studies], <strong>Branimir Šloser</strong> from programming cooperative Slobodna domena [Free Domain], <strong>Katarina Popović</strong>, designer of humanitarian application Info Help, <strong>Filip Milenković</strong> from Techfugees Serbia, and the architect and researcher <strong>Ana Dana Beroš</strong>.</p><h2 id="70d31a4a-5d94-479f-b744-67fdcba58888" class="">The panel touched on topics such as the refugees&#x27; use of technology, differences between refugees with mobile phones and digital nomads, how to help people who help refugees, the role of technology in migration, ways, and experiences of integration, innovation, the importance of communication and accessibility, the role of social media and traditional media in public discourse, questions of integration, education, and language learning, police and institutional violence, and migrant work.</h2><p id="566048a0-42cb-468b-b494-ad485686b914" class="">The event was visited by museum professionals, activists, and asylum seekers who unfortunately could not understand it because it was conducted in the Croatian language, which was later evaluated as an organizational mistake.</p>
 
 <!--this is gallery! it is under construction-->
-<div class="gallery"></div>
+<div class="container"><div class="gallery"></div>
 	<figure class="gallery__item gallery__item--1">
 		<img src="https://pmatic.github.io/ntmig/may/may%20(1)/33344813_1694945867287258_9205609104385507328_o_1694945860620592.jpg" class="gallery__img">
 	</figure>
@@ -710,6 +716,7 @@ While organizing the panel, the project team encountered difficulties in reachin
 		<img src="https://pmatic.github.io/ntmig/may/may%20(21)/33234756_1694945670620611_2678899728195780608_o_1694945667287278.jpg" class="gallery__img">
 	</figure>
 	</div>
+</div>
 
 
 <!--here we go back to basic page elements that already work-->
